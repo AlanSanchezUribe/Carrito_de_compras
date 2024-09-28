@@ -18,7 +18,7 @@ function App() {
       updateCart[itemExists].quantity ++;
       setCart(updateCart)
     }else{
-      console.log("No Existe")
+      
       item.quantity = 1;
       setCart([...cart, item]);
     }
