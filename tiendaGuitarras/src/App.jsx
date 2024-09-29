@@ -27,6 +27,8 @@ function App() {
       setCart([...cart, item]);
     }
 
+   
+
     
   }
 
@@ -59,6 +61,10 @@ function App() {
     });
     setCart(updateCart);
   }
+
+   function clearCart() {
+     setCart([]);
+   }
  
   return (
     <>
@@ -67,6 +73,7 @@ function App() {
       removeFromCart = {removeFromCart}
       increaseQuantity = {increaseQuantity}
       decreaseQuantity = {decreaseQuantity}
+      clearCart = {clearCart}
       />
       
 
